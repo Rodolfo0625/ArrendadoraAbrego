@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-App<sistema-reservas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.arrendadora.App",
+            "projectName": "sistema-reservas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<sistema-reservas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.arrendadora.Application",
+            "projectName": "sistema-reservas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

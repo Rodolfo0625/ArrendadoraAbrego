@@ -1,0 +1,8 @@
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/controller/ReservaController.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/Application.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/model/Vehiculo.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/model/Cliente.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/repository/reservaRepository.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/service/ReservaService.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/dto/ReservaDTO.java
+/home/rodolfova/sistema-reservas/src/main/java/com/arrendadora/model/Reserva.java
