@@ -2,7 +2,6 @@ package com.arrendadora.controller;
 
 import com.arrendadora.model.Reserva;
 import com.arrendadora.service.ReservaService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +15,7 @@ public class ReservaController {
 
     private final ReservaService reservaService;
 
-    @Autowired
+
     public ReservaController(ReservaService reservaService) {
         this.reservaService = reservaService;
     }
