@@ -34,7 +34,6 @@ public class SecurityConfig {
             .formLogin().disable() // Desactivar formulario de login
             .httpBasic().disable(); // Desactivar autenticación básica
 
-        // Agregar el filtro JWT antes del filtro de autenticación por nombre de usuario y contraseña
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }

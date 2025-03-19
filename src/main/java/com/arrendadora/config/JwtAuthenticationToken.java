@@ -10,18 +10,18 @@ public class JwtAuthenticationToken extends AbstractAuthenticationToken {
     private final String username;
 
     public JwtAuthenticationToken(String username) {
-        super(Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"))); // Puedes asignar el rol que desees
+        super(Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"))); 
         this.username = username;
-        setAuthenticated(true);  // Ya está autenticado con el JWT
+        setAuthenticated(true);  
     }
 
     @Override
     public Object getCredentials() {
-        return null;  // El JWT ya no se necesita en este punto
+        return null;  
     }
 
     @Override
     public Object getPrincipal() {
-        return username;  // El principal es el nombre de usuario extraído del JWT
+        return username;  
     }
 }

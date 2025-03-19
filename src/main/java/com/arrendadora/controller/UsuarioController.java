@@ -44,11 +44,11 @@ public class UsuarioController {
         Optional<Usuario> usuarioEncontrado = usuarioService.existeUsuarioPorEmail(usuario.getEmail());
 
         if (usuarioEncontrado.isPresent()) {
-            Usuario usuarioBD = usuarioEncontrado.get(); // ✅ Obtiene el usuario de Optional
+            Usuario usuarioBD = usuarioEncontrado.get(); 
             System.out.println("Contraseña ingresada: " + usuario.getPassword());
             System.out.println("Contraseña encriptada en la BD: " + usuarioBD.getPassword());
             boolean passwordMatch = passwordEncoder.matches(usuario.getPassword(), usuarioBD.getPassword());
-        System.out.println("¿Las contraseñas coinciden? " + passwordMatch);
+        System.out.println("Las contraseñas coinciden?" + passwordMatch);
 
         if (passwordMatch) {
             String token = jwtUtil.generateToken(usuario.getEmail());
